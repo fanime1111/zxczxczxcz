@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Астрономический Хаб</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: radial-gradient(circle, #1b2735 0%, #090a0f 100%);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 50px;
+            color: #00d2ff;
+            text-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            width: 90%;
+            max-width: 1100px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            background: rgba(0, 210, 255, 0.1);
+            border-color: #00d2ff;
+            box-shadow: 0 10px 30px rgba(0, 210, 255, 0.3);
+        }
+
+        .card h2 {
+            margin: 0 0 15px 0;
+            font-size: 1.8rem;
+            color: #00d2ff;
+        }
+
+        .card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #b0b0b0;
+            margin: 0;
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Мир Астрономии</h1>
+
+    <div class="container">
+        
+        <a href="project1/index.html" class="card">
+            <div class="card-icon">☀️</div>
+            <h2>Солнечная система</h2>
+            <p>Изучение Солнца, планет-гигантов, малых тел и современных методов наблюдения.</p>
+        </a>
+
+        <a href="project2/index.html" class="card">
+            <div class="card-icon">🔭</div>
+            <h2>Основы астрономии</h2>
+            <p>Общие сведения о космосе, физические законы и устройство нашей Вселенной.</p>
+        </a>
+
+        <a href="project3/index.html" class="card">
+            <div class="card-icon">🌍</div>
+            <h2>Земная группа</h2>
+            <p>Детальный разбор планет: Меркурий, Венера, Земля и Марс. Особенности их строения.</p>
+        </a>
+
+        <a href="project4/index.html" class="card">
+            <div class="card-icon">🎓</div>
+            <h2>Тесты и практика</h2>
+            <p>Проверь свои знания с помощью интерактивных викторин и практических заданий.</p>
+        </a>
+
+    </div>
+
+</body>
+</html>
